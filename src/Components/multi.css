@@ -1,0 +1,36 @@
+body {
+    background: url("https://i.pinimg.com/originals/48/79/86/487986c17560a8ed1afdc55e480e5be2.png");
+    background-size: cover;
+    text-align: center;
+    /* background-repeat: no-repeat;
+    font-family: "Noto Sans", sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+#box {
+    background-color: rgb(223, 222, 222);
+    border-radius: 5px;
+}
+
+table,
+td {
+    width: 100%;
+    text-align: left;
+}
+
+tr {
+    box-shadow: 10px solid rgb(10, 99, 187);
+}
+
+th {
+    width: 100%;
+}
+
+#edit {
+    float: right;
+}
