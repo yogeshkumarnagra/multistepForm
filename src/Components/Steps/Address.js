@@ -6,6 +6,14 @@ import Button from "@material-ui/core/Button";
 export const Address = ({ formData, setForm, navigation }) => {
   const { address, city, pincode } = formData;
   console.log(address);
+  
+  function nexthandler() {
+    if (address && city && pincode) navigation.next();
+    else {
+      seterr("enter valid data");
+    }
+  }
+  
   return (
     <Container maxWidth="xs">
       <TextField
@@ -38,7 +46,7 @@ export const Address = ({ formData, setForm, navigation }) => {
         autoComplete="off"
         fullWidth
       />{" "}
-      <Button variant="contained" onClick={() => navigation.previous()}>
+      <Button variant="contained" onClick={nexthandler()}>
         Back
       </Button>{" "}
       <Button
