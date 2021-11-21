@@ -5,6 +5,14 @@ import Button from "@material-ui/core/Button";
 
 export const Contact = ({ formData, setForm, navigation }) => {
   const { phone, email } = formData;
+  
+  function nexthandler() {
+    if (phone && email ) navigation.next();
+    else {
+      seterr("enter valid data");
+    }
+  }
+  
   return (
     <Container maxWidth="xs">
       <TextField
@@ -33,7 +41,7 @@ export const Contact = ({ formData, setForm, navigation }) => {
       <Button
         variant="contained"
         color="primary"
-        onClick={() => navigation.next()}
+        onClick={nexthandler()}
       >
         Next
       </Button>
